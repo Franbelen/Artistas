@@ -5,9 +5,12 @@
   <p style="text-align:center;">Aquí podrás encontrar información sobre artistas, tours y eventos.</p>
 
   <br>
+  <h3 align="center"> ¿Quieres saber los nombres y telefonos de todos nuestros artistas?</h3>
 
-  <h3 align="center"> ¿Quieres buscar un Pokemón por tipo y/o nombre?</h3>
-
+<form align="center" action="consultas/consulta_all.php" method="post">
+  <input type="submit" value="Mostrar lista">
+</form>
+ 
   <form align="center" action="consultas/consulta_tipo_nombre.php" method="post">
     Tipo:
     <input type="text" name="tipo_elegido">
