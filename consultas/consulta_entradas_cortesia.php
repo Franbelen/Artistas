@@ -8,11 +8,11 @@
 
 	$nombre = $_POST["nombre_artista"];
 
-	$query = "SELECT a.nombre as artista, COUNT(ec.asiento) as cantidad_entradas_cortesia
-	FROM artistas as a, entradascortesia as ec
-	WHERE a.nombre = ec.nombre_artista
-	AND a.nombre = $nombre
-	GROUP BY a.nombre;";
+	$query = "SELECT artistas.nombre, COUNT(entradascortesia.asiento)
+	FROM artistas , entradascortesia 
+	WHERE artistas.nombre = entradascortesia.nombre_artista
+	AND artistas.nombre LIKE "%$nombre%"
+	GROUP BY artistas.nombre;";
 	
 	$result = $db -> prepare($query);
 	$result -> execute();
