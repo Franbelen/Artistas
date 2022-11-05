@@ -7,17 +7,18 @@
   <br>
   <h3 align="center"> ¿Quieres saber los nombres y telefonos de todos nuestros artistas?</h3>
 
-<form align="center" action="consultas/consulta_all.php" method="post">
+  <form align="center" action="consultas/consulta_all.php" method="post">
   <input type="submit" value="Mostrar lista">
-</form>
- 
-  <form align="center" action="consultas/consulta_tipo_nombre.php" method="post">
-    Tipo:
-    <input type="text" name="tipo_elegido">
+  </form>
+  
+  <br>
+  <br>
+  <h3 align="center"> ¿Quieres saber a quien le ha entregado entradas de cortesia un artista?</h3>
+  <form align="center" action="consultas/consulta_entradas_cortesia.php" method="post">
+    Nombre
+    <input type="text" name="nombre artista">
     <br/>
-    Nombre:
-    <input type="text" name="nombre_pokemon">
-    <br/><br/>
+    
     <input type="submit" value="Buscar">
   </form>
   
