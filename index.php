@@ -1,4 +1,7 @@
 <?php include('templates/header.html');   ?>
+<style>
+  <?php include "./styles/style.css" ?>
+</style>
 
 <body>
 
