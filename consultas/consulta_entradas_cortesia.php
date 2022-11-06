@@ -11,7 +11,7 @@
 	$query = "SELECT ec.nombre_artista as artista, COUNT(ec.asiento) as cantidad_entradas_cortesia
 	FROM entradascortesia as ec
 	WHERE LOWER(ec.nombre_artista) LIKE LOWER('%$nombre%')
-	GROUP BY ec.nombre_nombre;";
+	GROUP BY ec.nombre_artista;";
 
 	$result = $db -> prepare($query);
 	$result -> execute();

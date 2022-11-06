@@ -32,9 +32,9 @@
 // Consulta 3
   <h3 align="center"> ¿Quieres saber sobre el ultimo tour de un artista?</h3>
 
-  <form align="center" action="consultas/consulta_stats.php" method="post">
-    Id:
-    <input type="text" name="id_elegido">
+  <form align="center" action="consultas/consulta_last_tour.php" method="post">
+    Nombre Artista:
+    <input type="text" name="nombre">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
