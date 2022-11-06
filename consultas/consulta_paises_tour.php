@@ -26,16 +26,16 @@
 <h2> Paises y mas informacion de tour </h2>
 	<table>
     <tr>
-	  <th>   Tour   </th>
-	  <th>   Artista   </th>
-      <th>   Paises    </th>
-	  <th>   Ciudad    </th>
-	  <th>   Fecha    </th>
+	  <th>     Tour     </th>
+	  <th>     Artista     </th>
+      <th>     Paises      </th>
+	  <th>     Ciudad      </th>
+	  <th>     Fecha      </th>
     </tr>
   <?php
 	echo "Nombre tour ingresado: $nombre_tour";
 	foreach ($artistas as $artista) {
-  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[3]</td> <td>$artista[2]</td><td>$artista[4]</td> </tr>";
+  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[2]</td> <td>$artista[3]</td><td>$artista[4]</td> </tr>";
 	}
   ?>
 	</table>

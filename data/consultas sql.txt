@@ -44,6 +44,3 @@ ORDER BY v.nombre_artista;
 
 
 7
-SELECT
-FROM artista as a, entradascortesia as ec
-WHERE
