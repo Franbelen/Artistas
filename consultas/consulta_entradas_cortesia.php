@@ -8,11 +8,10 @@
 
 	$nombre = $_POST["nombre_artista"];
 
-	$query = "SELECT artistas.nombre, COUNT(entradascortesia.asiento) 
-	FROM artistas , entradascortesia 
-	WHERE artistas.nombre = entradascortesia.nombre_artista
-	AND artistas.nombre = $nombre
-	GROUP BY artistas.nombre;";
+	$query = "SELECT COUNT(entradascortesia.asiento) 
+	FROM entradascortesia 
+	WHERE entradascortesia.nombre_artista = $nombre
+	GROUP BY entradascortesia.nombre;";
 	
 	$result = $db -> prepare($query);
 	$result -> execute();
@@ -25,6 +24,7 @@
       <th>Cantidad entradas</th>
     </tr>
   <?php
+	echo "Artista: $name";
 	foreach ($artistas as $artista) {
   		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> </tr>";
 	}
