@@ -6,12 +6,12 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-	$nombre = $_POST["nombre_artista"];
+	$nombre_tour = $_POST["nombre_tour"];
 
-	$query = "SELECT ec.nombre_artista as artista, COUNT(ec.asiento) as cantidad_entradas_cortesia
-	FROM entradascortesia as ec
-	WHERE LOWER(ec.nombre_artista) LIKE LOWER('%$nombre%')
-	GROUP BY ec.nombre_nombre;";
+	$query = "SELECT e.país, e.fecha_inicio
+	FROM tour as t, eventos as e
+	WHERE t.nombre = e.nombre
+	AND LOWER(t.nombre) LIKE LOWER ('%$nombre_tour%');";
 
 	$result = $db -> prepare($query);
 	$result -> execute();
@@ -20,11 +20,11 @@
 
 	<table>
     <tr>
-      <th>Nombre</th>
-      <th>Cantidad entradas</th>
+      <th>Paises por visitar</th>
+	  <th> Fecha </th>
     </tr>
   <?php
-	echo "Artista: $nombre";
+
 	foreach ($artistas as $artista) {
   		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> </tr>";
 	}
