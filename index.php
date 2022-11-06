@@ -1,9 +1,21 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">DCC Artistas</h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre artistas, tours y eventos.</p>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='title'>
 
+  <h1 align="center">DCC Artistas</h1>
+  <div id='title2'><p style="text-align:center;">Aquí podrás encontrar información sobre artistas, tours y eventos.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
 
   <h3 align="center"> ¿Quieres saber los nombres y telefonos de todos nuestros artistas?</h3>
@@ -83,5 +95,7 @@
   <br>
   <br>
   <br>
+  </div>
+
 </body>
 </html>
