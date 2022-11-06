@@ -27,7 +27,7 @@
 	  <th>  Número  </th>
     </tr>
   <?php
-	echo "Nombre tour: $nombre_tour";
+	echo "Nombre tour: $nombre";
 	foreach ($artistas as $artista) {
   		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[2]</td> <td>$artista[3]</td> </tr>";
 	}

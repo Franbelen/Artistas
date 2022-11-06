@@ -12,7 +12,7 @@
 	WHERE a.nombre = ec.nombre_artista
 	GROUP BY a.nombre
 	ORDER BY maximum DESC 
-	LIMIT 1;}";
+	LIMIT 1;";
 	
 	$result = $db -> prepare($query);
 	$result -> execute();

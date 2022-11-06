@@ -12,7 +12,7 @@
 	SELECT e.*
 	FROM tour as t, eventos as e
 	WHERE t.nombre = e.nombre
-	AND LOWER(e.nombre_artista) LIKE LOWER('%$name%')
+	AND LOWER(e.nombre_artista) LIKE LOWER('%$nombre%')
 	ORDER BY e.fecha_inicio DESC
 	LIMIT 1;";
 
