@@ -3,6 +3,10 @@
   <?php include ".././styles/style.css" ?>
 </style>
 <body>
+  <div id='stars'></div>
+  <div id='stars2'></div>
+  <div id='stars3'></div>
+  <div id='title'>
 
 <?php
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
@@ -32,5 +36,5 @@
 	}
   ?>
 	</table>
-
+	</div>
 <?php include('../templates/footer.html'); ?>
