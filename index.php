@@ -64,7 +64,7 @@
   <br>
   <br>
 
-// Consulta 6
+
 <h3 align="center">¿Donde se ha hospedado el artista?</h3>
 <form align="center" action="consultas/consulta_hospedajes.php" method="post">
     Nombre artista:

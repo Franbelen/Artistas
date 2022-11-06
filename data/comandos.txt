@@ -1,9 +1,0 @@
-# Conectarse a servidor 
-  $	 ssh grupo39@codd.ing.puc.cl
-# Usar Postgresql
-  $	psql (dentro del servidor)
-	para ingresar a la base de datos <N = numero de entrega>
-  $	 \c grupo39eN
-  
- # Sitio en servidor 
- Archivos en: /home/grupo39/Sites
