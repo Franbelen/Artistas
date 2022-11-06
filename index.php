@@ -19,7 +19,7 @@
   <h3 align="center"> ¿Quieres saber a quien le ha entregado entradas de cortesia un artista?</h3>
   <form align="center" action="consultas/consulta_entradas_cortesia.php" method="post">
     Nombre
-    <input type="text" name="nombre artista">
+    <input type="text" name="nombre_artista">
     <br/>
     
     <input type="submit" value="Buscar">
