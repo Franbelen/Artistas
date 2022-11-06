@@ -45,9 +45,9 @@
 // Consulta 4
   <h3 align="center"> ¿Quieres saber paises por donde pasara un tour?</h3>
 
-  <form align="center" action="consultas/consulta_altura.php" method="post">
-    Altura Mínima:
-    <input type="text" name="altura">
+  <form align="center" action="consultas/consulta_paises_tour.php" method="post">
+    Nombre tour:
+    <input type="text" name="nombre_tour">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
