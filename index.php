@@ -1,8 +1,7 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <link rel="stylesheet" href="../styles/style.css">
-  
+
   <div id='stars'></div>
   <div id='stars2'></div>
   <div id='stars3'></div>
