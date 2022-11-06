@@ -5,18 +5,16 @@
   <p style="text-align:center;">Aquí podrás encontrar información sobre artistas, tours y eventos.</p>
 
   <br>
-// Consulta 1
+
   <h3 align="center"> ¿Quieres saber los nombres y telefonos de todos nuestros artistas?</h3>
 
   <form align="center" action="consultas/consulta_all.php" method="post">
   <input type="submit" value="Mostrar lista">
   </form>
-  
   <br>
   <br>
-// Consulta 2
 
-  <h3 align="center"> ¿Quieres saber a quien le ha entregado entradas de cortesia un artista?</h3>
+  <h3 align="center"> ¿Quieres saber a quien le ha entregado entradas de cortesía un artista?</h3>
   <form align="center" action="consultas/consulta_entradas_cortesia.php" method="post">
     Nombre
     <input type="text" name="nombre_artista">
@@ -77,7 +75,7 @@
   <br>
   <br>
   <br>
-// Consulta 7
+
 <h3 align="center">¿Quien es el artista con mayor cantidad de entradas regaladas?</h3>
 <form align="center" action="consultas/consulta_mas_entradas.php" method="post">
     <input type="submit" value="Buscar">

@@ -18,7 +18,7 @@
 	$result -> execute();
 	$artistas = $result -> fetchAll();
   ?>
-<h2> Productoras que han trabajado con un artista
+<h2> Productoras que han trabajado con un artista </h2>
 	<table>
     <tr>
 	  <th>  Artista  </th>

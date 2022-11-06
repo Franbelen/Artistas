@@ -34,7 +34,7 @@
   <?php
 	echo "Nombre artista ingresado: $nombre \n";
 	foreach ($artistas as $artista) {
-  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[2]</td><td>$artista[3]</td><td>$artista[4]</td><td>$artista[5]</td></tr>";
+  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[2]</td><td>$artista[3]</td><td>$artista[4]</td><td>$artista[5]</td><td>$artista[6]</td></tr>";
 	}
   ?>
 	</table>
