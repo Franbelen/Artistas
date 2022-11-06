@@ -58,7 +58,7 @@
   <h3 align="center">¿Quienes han trabajado con un artista?</h3>
   <form align="center" action="consultas/consulta_productoras.php" method="post">
     Nombre artista:
-    <input type="text" name="nombre_artista">
+    <input type="text" name="nombre">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>
@@ -70,7 +70,7 @@
 <h3 align="center">¿Donde se ha hospedado el artista?</h3>
 <form align="center" action="consultas/consulta_hospedajes.php" method="post">
     Nombre artista:
-    <input type="text" name="nombre_artista">
+    <input type="text" name="nombre">
     <br/><br/>
     <input type="submit" value="Buscar">
   </form>

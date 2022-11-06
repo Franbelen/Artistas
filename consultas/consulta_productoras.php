@@ -18,7 +18,7 @@
 	$result -> execute();
 	$artistas = $result -> fetchAll();
   ?>
-
+<h2> Productoras que han trabajado con un artista
 	<table>
     <tr>
 	  <th>  Artista  </th>
@@ -27,7 +27,8 @@
 	  <th>  Número  </th>
     </tr>
   <?php
-	echo "Nombre tour: $nombre";
+	echo "Nombre artista: $nombre \n";
+
 	foreach ($artistas as $artista) {
   		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> <td>$artista[2]</td> <td>$artista[3]</td> </tr>";
 	}

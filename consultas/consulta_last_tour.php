@@ -9,7 +9,6 @@
 	$nombre = $_POST["nombre"];
 
 	$query = "SELECT e.*
-	SELECT e.*
 	FROM tour as t, eventos as e
 	WHERE t.nombre = e.nombre
 	AND LOWER(e.nombre_artista) LIKE LOWER('%$nombre%')
@@ -28,9 +27,9 @@
 	  <th>  Recinto  </th>
 	  <th>  Artista  </th>
       <th>  Pais  </th>
-	  <th> Ciudad  </th>
+	  <th>  Ciudad  </th>
 	  <th>  Fecha  </th>
-	  <th>Productora</th>
+	  <th>  Productora  </th>
     </tr>
   <?php
 	echo "Nombre artista ingresado: $nombre \n";

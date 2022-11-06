@@ -21,9 +21,9 @@
 <h2> Información hospedaje </h2>
 	<table>
     <tr>
-	  <th>  Artista  </th>
-      <th>  Nombre estadia  </th>
-	  <th>  Lugar  </th>
+	  <th>  --Artista--  </th>
+      <th>  --Nombre estadia--  </th>
+	  <th>  --Lugar--  </th>
     </tr>
   <?php
 	echo "Nombre artista ingresado: $nombre";
