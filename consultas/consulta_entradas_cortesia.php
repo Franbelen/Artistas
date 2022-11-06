@@ -8,10 +8,10 @@
 
 	$nombre = $_POST["nombre_artista"];
 
-	$query = "SELECT artistas.nombre, COUNT(entradascortesia.asiento)
+	$query = "SELECT artistas.nombre, COUNT(entradascortesia.asiento) 
 	FROM artistas , entradascortesia 
 	WHERE artistas.nombre = entradascortesia.nombre_artista
-	AND artistas.nombre LIKE "%$nombre%"
+	AND artistas.nombre = 'Duki'
 	GROUP BY artistas.nombre;";
 	
 	$result = $db -> prepare($query);
