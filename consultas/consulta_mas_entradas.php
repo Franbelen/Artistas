@@ -49,7 +49,7 @@
 	$result -> execute();
 	$artistas = $result -> fetchAll();
   ?>
-<h2> Artista con mas entradas regaladas </h2>
+
 	<table>
     <tr>
 	  <th>  Artista  </th>
@@ -59,7 +59,7 @@
   <?php
 	
 	foreach ($artistas as $artista) {
-  		echo "<tr> <td>$artista[0]</td> <td>$artista[1]</td> </tr>";
+  		echo "<tr> <td> $artista[0] </td> <td>         $artista[1]</td> </tr>";
 	}
   ?>
 	</table>
