@@ -12,7 +12,8 @@
 	FROM estadía as h, viaje as v
 	WHERE v.código = h.código
 	AND LOWER(v.nombre_artista) LIKE LOWER('%$nombre%')
-	GROUP BY v.nombre_artista,h.nombre, h.lugar;";
+	GROUP BY v.nombre_artista,h.nombre, h.lugar
+	ORDER BY v.nombre_artista;";
 	
 	$result = $db -> prepare($query);
 	$result -> execute();
@@ -24,6 +25,7 @@
 	  <th>    Artista    </th>
       <th>    Nombre estadia    </th>
 	  <th>    Lugar    </th>
+	  <th>    Veces hospedado   </th>
     </tr>
   <?php
 	echo "Nombre artista ingresado: $nombre \n";
