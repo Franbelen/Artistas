@@ -11,7 +11,7 @@
 	$query = "SELECT artistas.nombre, COUNT(entradascortesia.asiento) 
 	FROM artistas , entradascortesia 
 	WHERE artistas.nombre = entradascortesia.nombre_artista
-	AND artistas.nombre = 'Duki'
+	AND artistas.nombre = $nombre
 	GROUP BY artistas.nombre;";
 	
 	$result = $db -> prepare($query);

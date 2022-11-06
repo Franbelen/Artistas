@@ -81,6 +81,10 @@
 
   <br>
   <br>
+// Consulta 6
+<h3 align="center">¿Donde se ha hospedado el artista?</h3>
+// Consulta 7
+<h3 align="center">¿Quien es el artista con mayor cantidad de entradas regaladas?</h3>
   <br>
   <br>
 </body>
