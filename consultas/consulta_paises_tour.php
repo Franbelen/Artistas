@@ -18,14 +18,14 @@
 	$result -> execute();
 	$artistas = $result -> fetchAll();
   ?>
-
+<h2> Paises y mas informacion de tour </h2>
 	<table>
     <tr>
-	  <th>  Tour  </th>
-	  <th>  Artista  </th>
-      <th>  Paises   </th>
-	  <th>  Ciudad   </th>
-	  <th>   Fecha   </th>
+	  <th>   Tour   </th>
+	  <th>   Artista   </th>
+      <th>   Paises    </th>
+	  <th>   Ciudad    </th>
+	  <th>   Fecha    </th>
     </tr>
   <?php
 	echo "Nombre tour: $nombre_tour";

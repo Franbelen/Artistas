@@ -27,7 +27,7 @@
   <br>
   <br>
 
-// Consulta 3
+
   <h3 align="center"> ¿Quieres saber sobre el ultimo tour de un artista?</h3>
 
   <form align="center" action="consultas/consulta_last_tour.php" method="post">
@@ -40,7 +40,7 @@
   <br>
   <br>
   <br>
-// Consulta 4
+
   <h3 align="center"> ¿Quieres saber paises por donde pasara un tour?</h3>
 
   <form align="center" action="consultas/consulta_paises_tour.php" method="post">
@@ -52,7 +52,7 @@
   <br>
   <br>
   <br>
-// Consulta 5 
+
   <h3 align="center">¿Quienes han trabajado con un artista?</h3>
   <form align="center" action="consultas/consulta_productoras.php" method="post">
     Nombre artista:

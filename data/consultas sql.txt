@@ -33,12 +33,14 @@ AND e.nombre_productora = p.nombre
 AND a.nombre = 'artista_ingresado_por_usuario';
 
 
-6???
-SELECT h.nombre as nombre_hotel, COUNT (h.código) as n_hospedajes
-FROM artistas as a, estadía as h, viaje as v
-WHERE v.código = h.código
-AND v.nombre_artista = 'artista_ingresado_por_usuario'
-GROUP BY h.nombre;
+6 
+
+SELECT v.nombre_artista,h.nombre, h.lugar , COUNT(v.nombre_artista,h.nombre, h.lugar)
+FROM estadía as h, viaje as v
+WHERE LOWER(v.nombre_artista) LIKE LOWER('%%')
+AND v.código = h.código
+GROUP BY v.nombre_artista, h.nombre, h.lugar
+ORDER BY v.nombre_artista;
 
 
 7
